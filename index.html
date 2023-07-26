@@ -16,6 +16,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary-color': '#F85559',
+                'secondary-color':'#6D6D6D',
               }
             }
           }
@@ -25,7 +26,7 @@
         .font-lato{font-family: 'Lato', sans-serif;}
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PH Fruit Cart</title>
 </head>
 <body class="font-lato container mx-auto">
     <header>
@@ -120,7 +121,96 @@
               </div>
 
     </header>
-    <main></main>
+    <main>
+    <!--Deal section-->
+      <section class="lg:mt-10">
+        <div class="flex lg:flex-row md:flex-col flex-col justify-around">
+          <div class="lg:mr-80 lg:text-left text-center md:text-center mx-5 lg:mx-0 md:mx-5">
+            <h3 class="text-3xl font-extrabold ">
+              Deal of the day
+            </h3>
+            <p class="text-secondary-color text-base font-normal">
+              Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <div class="mx-auto mt-4">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:29;"></span>
+                  
+                </span>
+                days
+              </div> 
+              <div class="pt-2.5">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="pt-2.5">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:25;"></span>
+                </span>
+                min
+              </div> 
+              <div class="pt-2.5">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:08;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--add to cart modal section -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
+            </figure>
+            
+            <div class="items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              
+              <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+              
+              <p>Apples</p>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              </div>
+              
+              <div class="">
+                <button class="btn btn-primary"><details></details></button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+    </section>
+    </main>
     <footer></footer>
 </body>
 </html>
